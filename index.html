@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<button class="add-product">Добавить новый товар</button>
+
+		<form name="first" action="#">
+			<div>
+				<label for="from">Товары от:</label>
+				<input name="from" id="from" placeholder="$100" type="number">
+			</div>
+			<div>
+				<label for="to">Товары до:</label>
+				<input name="to" id="to" placeholder="$500" type="number">
+			</div>
+			<button class="show">Показать</button>
+		</form>
+
+
+		<div class="box">
+
+
+		</div>
+
+
+		<form name="menu" class="menu">
+			<div>
+				<label for="product-name">Название товара</label>
+				<input name="name" id="product-name" placeholder="Курица" type="text">
+			</div>
+			<div>
+				<label for="product-price">Цена товара</label>
+				<input name="price" id="product-price" placeholder="$100" type="number">
+			</div>
+			<button type="submit" class="add">Добавить</button>
+			<button type="reset" class="back">Назад</button>
+		</form>
+	</div>
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
