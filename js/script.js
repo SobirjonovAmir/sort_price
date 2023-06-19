@@ -62,6 +62,9 @@ function filterProducts() {
 	let minPrice = parseInt(document.getElementById('from').value);
 	let maxPrice = parseInt(document.getElementById('to').value);
 
+	if (!minPrice) return
+	if (!maxPrice) return
+
 	let filtered = products.filter(product => product.price >= minPrice && product.price <= maxPrice).sort((a,b) => a.price - b.price);
 
 	reload(filtered);
